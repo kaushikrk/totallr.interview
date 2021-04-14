@@ -1,0 +1,49 @@
+/* Custom Fonts */
+@font-face {
+    font-family: "primaryFont";
+    src: url(../assets/Montserrat-Regular.ttf);
+}
+
+body {
+    background-color: #000a20;
+    font-family: "primaryFont";
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.navigationWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60vw;
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.navigationWrapper div p:hover {
+    color: rgb(173, 64, 82);
+    cursor: pointer;
+}
+
+.navigation {
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .navigationWrapper {
+        flex-direction: column;
+    }
+}
+
+

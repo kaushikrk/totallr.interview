@@ -1,0 +1,16 @@
+.usersWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue !important;
+    width: 80vw;
+}
+
+.table {
+    color: aliceblue !important;
+}
+
+#viewUsers {
+    color: rgb(173, 64, 82);
+}
