@@ -1,6 +1,7 @@
 package com.totallr.demo.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 
 @Entity
 public class User {
@@ -22,6 +23,14 @@ public class User {
     Integer age;
     String address;
     String profession;
+
+    @Transient
+    public ArrayList<String>professions = new ArrayList<>() {{
+        add("Web Developer");
+        add("Data Scientist");
+        add("Designer");
+        add("App Developer");
+    }};
 
     public void setName (String _name) {
         this.name = _name;

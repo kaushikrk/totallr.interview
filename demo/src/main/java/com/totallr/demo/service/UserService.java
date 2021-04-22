@@ -25,7 +25,7 @@ public class UserService {
             response.setMessage("Invalid age");
         } else if (user.getAddress().equals("")) {
             response.setMessage("Address field cannot be empty");
-        } else if (user.getProfession().equals("")) {
+        } else if (user.getProfession().equals("")||!user.professions.contains(user.getProfession())) {
             response.setMessage("Profession field cannot be empty");
         } else {
             response.setMessage("Success");
